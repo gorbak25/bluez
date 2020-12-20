@@ -2083,7 +2083,7 @@ static void avdtp_state_cb(struct btd_device *dev, struct avdtp *session,
 			chan->session = session;
 		/* Only load SEPS from the cache if we did not already obtain them in avdtp_discover_resp */
 		if (queue_isempty(chan->seps)) {
-			load_remote_seps(chan);
+			//load_remote_seps(chan);
 		}
 		break;
 	}
