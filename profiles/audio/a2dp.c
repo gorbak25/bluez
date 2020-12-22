@@ -2082,6 +2082,7 @@ static void avdtp_state_cb(struct btd_device *dev, struct avdtp *session,
 		if (!chan->session)
 			chan->session = session;
 		/* Only load SEPS from the cache if we did not already obtain them in avdtp_discover_resp */
+		DBG("GORBAK25: AVDTP_SESSION_STATE_CONNECTED");
 		if (queue_isempty(chan->seps)) {
 			//load_remote_seps(chan);
 		}

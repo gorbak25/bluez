@@ -3353,6 +3353,8 @@ int avdtp_discover(struct avdtp *session, avdtp_discover_cb_t cb,
 		return 0;
 	}*/
 
+	DBG("GORBAK25: AVDTP_DISCOVERING!");
+
 	err = send_request(session, FALSE, NULL, AVDTP_DISCOVER, NULL, 0);
 	if (err == 0) {
 		session->discover->cb = cb;
